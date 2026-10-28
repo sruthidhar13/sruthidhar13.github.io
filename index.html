@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#fbf7ee">
+<title>Sruthidhar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#fbf7ee; --ink:#1c1c1c; --mute:#8a8578; --rule:#e9e2d3;
+  --peach:#fde4d6; --mint:#dcf2e5; --lav:#e7e2f8; --butter:#fbf0c4; --pink:#fbdde7;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;font-size:14px;line-height:1.6}
+.wrap{max-width:720px;margin:0 auto;padding:40px 24px 96px}
+a{color:var(--ink);text-decoration:none}
+header{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:12px;padding-bottom:18px;border-bottom:1px solid var(--rule)}
+header .name{font-weight:500}
+nav{display:flex;gap:6px;flex-wrap:wrap}
+nav a{padding:2px 10px;border-radius:999px}
+nav a:nth-child(1):hover{background:var(--peach)}
+nav a:nth-child(2):hover{background:var(--mint)}
+nav a:nth-child(3):hover{background:var(--butter)}
+nav a:nth-child(4):hover{background:var(--pink)}
+section{padding-top:56px}
+h2{font-size:14px;font-weight:500;margin:0 0 24px;display:inline-block;padding:3px 12px;border-radius:999px}
+#about h2{background:var(--peach)}
+#log h2{background:var(--mint)}
+#elsewhere h2{background:var(--butter)}
+#contact h2{background:var(--pink)}
+.bar{display:block;height:10px;border-radius:3px;background:var(--rule);margin:0 0 10px}
+.w20{width:20%}.w30{width:30%}.w40{width:40%}.w60{width:60%}.w80{width:80%}.w100{width:100%}
+.hero{padding:64px 0 0}
+.hero .bar{height:18px}
+.entry{display:grid;grid-template-columns:110px 1fr;gap:20px;padding:20px 0;border-bottom:1px solid var(--rule)}
+.entry:first-of-type{padding-top:0}
+.row{padding:16px 0;border-bottom:1px solid var(--rule)}
+.crow{display:grid;grid-template-columns:110px 1fr;gap:20px;padding:14px 0;border-bottom:1px solid var(--rule)}
+.crow .bar{margin:0}
+.tiles{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.tile{border-radius:10px;padding:18px;min-height:110px}
+.tile .bar{background:rgba(255,255,255,.7)}
+.t1{background:var(--peach)}.t2{background:var(--mint)}.t3{background:var(--lav)}.t4{background:var(--butter)}
+footer{margin-top:72px;padding-top:18px;border-top:1px solid var(--rule);display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;color:var(--mute)}
+::selection{background:var(--butter)}
+a:focus-visible{outline:2px solid var(--ink);outline-offset:3px;border-radius:4px}
+.proj{padding:20px 0;border-bottom:1px solid var(--rule)}
+.proj:first-of-type{padding-top:0}
+.proj .links{margin:14px 0}
+.proj .links .bar{margin:0}
+.proj summary{cursor:pointer;list-style:none;display:inline-block;padding:2px 12px;border-radius:999px;background:var(--mint)}
+.proj:nth-of-type(2) summary{background:var(--lav)}
+.proj:nth-of-type(3) summary{background:var(--butter)}
+.proj summary::-webkit-details-marker{display:none}
+.proj summary::before{content:"+ "}
+.proj details[open] summary::before{content:"– "}
+.proj details[open] summary{margin-bottom:16px}
+.proj .entry:last-of-type{border-bottom:0;padding-bottom:0}
+@media (max-width:560px){.entry{grid-template-columns:1fr;gap:6px}.tiles{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <a class="name" href="#top">Sruthidhar</a>
+  <nav>
+    <a href="#about">about</a>
+    <a href="#log">projects</a>
+    <a href="#elsewhere">hobbies</a>
+    <a href="#contact">contact</a>
+  </nav>
+</header>
+
+<div class="hero" id="top">
+  <span class="bar w80"></span>
+  <span class="bar w60"></span>
+</div>
+
+<section id="about">
+  <h2>About</h2>
+  <p style="margin:0">I like digital electronics</p>
+</section>
+
+<section id="log">
+  <h2>Projects</h2>
+  <div class="proj">
+    <span class="bar w40"></span>
+    <span class="bar w100"></span>
+    <span class="bar w80"></span>
+    <div class="links"><span class="bar w20"></span></div>
+    <details>
+      <summary>log</summary>
+      <div class="entry"><span class="bar w60"></span><div><span class="bar w100"></span><span class="bar w60"></span></div></div>
+      <div class="entry"><span class="bar w60"></span><div><span class="bar w100"></span><span class="bar w60"></span></div></div>
+    </details>
+  </div>
+  <div class="proj">
+    <span class="bar w40"></span>
+    <span class="bar w100"></span>
+    <span class="bar w80"></span>
+    <div class="links"><span class="bar w20"></span></div>
+    <details>
+      <summary>log</summary>
+      <div class="entry"><span class="bar w60"></span><div><span class="bar w100"></span><span class="bar w60"></span></div></div>
+      <div class="entry"><span class="bar w60"></span><div><span class="bar w100"></span><span class="bar w60"></span></div></div>
+    </details>
+  </div>
+  <div class="proj">
+    <span class="bar w40"></span>
+    <span class="bar w100"></span>
+    <span class="bar w80"></span>
+    <div class="links"><span class="bar w20"></span></div>
+    <details>
+      <summary>log</summary>
+      <div class="entry"><span class="bar w60"></span><div><span class="bar w100"></span><span class="bar w60"></span></div></div>
+      <div class="entry"><span class="bar w60"></span><div><span class="bar w100"></span><span class="bar w60"></span></div></div>
+    </details>
+  </div>
+</section>
+
+<section id="elsewhere">
+  <h2>Hobbies</h2>
+  <div class="tiles">
+    <div class="tile t1"><span class="bar w40"></span><span class="bar w80"></span></div>
+    <div class="tile t2"><span class="bar w40"></span><span class="bar w80"></span></div>
+    <div class="tile t3"><span class="bar w40"></span><span class="bar w80"></span></div>
+    <div class="tile t4"><span class="bar w40"></span><span class="bar w80"></span></div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <div class="crow"><span class="bar w60"></span><span class="bar w40"></span></div>
+  <div class="crow"><span class="bar w60"></span><span class="bar w60"></span></div>
+  <div class="crow"><span class="bar w60"></span><span class="bar w40"></span></div>
+</section>
+
+<footer>
+  <span class="bar w20" style="margin:0"></span>
+  <a href="https://github.com/srthdhr13">github.com/srthdhr13</a>
+</footer>
+
+</div>
+</body>
+</html>
